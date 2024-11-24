@@ -1,0 +1,422 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+.header {
+	background: rgb(78,70,200);
+	background: linear-gradient(90deg, rgba(78,70,200,1) 0%, rgba(0,212,255,1) 29%, rgba(0,211,254,1) 67%, rgba(2,211,255,1) 89%);
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.container {
+	width: 1024px;
+	margin: auto;
+}
+
+.logo {
+	margin-bottom: 25px;
+}
+
+.wrapper-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+.offer {
+	width: 700px;
+}
+
+.offer__title {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	margin-bottom: 15px;
+}
+
+.offer__span {
+	font-size: 40px;
+	font-weight: 700;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.offer__text {
+	font-size: 16px;
+}
+
+.btn {
+	display: block;
+	width: 220px;
+	height: 55px;
+	background-color: rgb(255,190,0);
+	font-weight: bold;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.img {
+	width: 420px;
+}
+
+.wrapper-blocks {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.aligning {
+	text-align: center;
+}
+
+.blocks {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 35px;
+
+}
+.block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 330px;
+}
+.img1 {
+	margin-bottom: 30px;
+	width: 50px;
+}
+
+.order-form{ 
+background-color: rgb(239, 239, 239);
+}
+
+.wrapper-form { 
+padding-top: 20px;
+padding-bottom: 35px;
+
+}
+
+.form {
+	max-width: 275px;	
+	margin: auto;
+	margin-top: 25px;
+}
+
+.form input {
+	width: 275px;
+	padding: 12px;
+	margin-top: 15px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.form input:invalid {
+	border: 2px solid rgb(255, 0, 0); 
+	background-color: rgb(243, 107, 107);
+} 
+	
+.form input:valid { 
+	border: 2px solid rgb(0, 255, 0); 
+	background-color: rgb(30, 210, 150);
+} 
+
+.form button {
+	width: 275px;
+	padding: 12px;
+	margin-top: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	border: 1px solid;
+	background-color: rgb(255,190,0);
+}
+
+.footer {
+	background: rgb(46,158,235);
+	background: linear-gradient(0deg, rgba(46,158,235,1) 45%, rgba(72,142,205,1) 57%);
+	padding-top: 30px;
+	padding-bottom: 20px;
+	display: flex;
+}
+
+.footer__text {
+	color: white;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.subscription-form {
+	background-color: rgb(32, 220, 154);
+    padding: 20px;
+    max-width: 500px;
+    margin: left;
+}
+
+.subscription-form input {
+    width: 100%;
+	padding: 12px;
+	margin-top: 13px;
+	margin-bottom: 5px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#sendOrder { 
+	display: inline-block;
+    padding: 10px 20px;
+    margin-top: 13px;
+	width: 460px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    border: 1px solid;
+	cursor: pointer;
+    background-color: rgb(255, 190, 0); 
+    color: black; 
+}
+
+.lab8cont {
+    display: flex; 
+}
+
+.order-summary {
+    flex: 1; 
+    padding: 20px;
+    background-color: rgb(32, 220, 154); 
+}
+
+#summary {
+    text-align: center; 
+    display: block; 
+    margin: 10px auto; 
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/ 
+@media screen and (max-width: 1200px) 
+{ 
+	.container, .subscription-form, .order-summary{
+		width: 960px;
+	}
+}
+/* Large devices (desktops, 992px and up)*/ 
+@media screen and (max-width: 992px)
+{ 
+	.container, .subscription-form, .order-summary{
+		width: 720px;
+	}
+	.wrapper-inner{
+		flex-direction: column;
+	}
+	.offer{
+		width: 100%;
+		margin-top: 40px;
+	}
+	.offer__text{
+		width: 100%;
+	}
+	.img{
+		display: block;
+		width: 450px;
+		margin: 40px auto;
+	}
+	.block{
+		margin: 50px auto;
+	}
+	.blocks{
+		display: block;
+	}
+	.wrapper-blocks {
+		padding-bottom: 10px;
+		font-size: 130%;
+	}
+	.img1{
+		width: 35%;
+	}
+	.logo{
+		width: 20%;
+	}
+	.btn{
+		font-size: 130%;
+	}
+	.offer__title{
+		font-size: 37px;
+	}
+	.offer__span{
+		font-size: 67px;
+	}
+	.offer__text{
+		font-size: 23px;
+	}
+	.footer{
+		font-size: 20px;
+	}
+	.wrapper-form{
+		font-size: 130%
+	}
+	.form_input{
+		font-size: 90%;
+	}
+	.form_button{
+		font-size: 90%;
+	}
+} 
+
+/* Medium devices (tablets, 768px and up)*/ 
+@media screen and (max-width: 768px) 
+{ 
+	.container, .subscription-form, .order-summary{
+		width: 540px;
+	}
+	.img{
+		width: 450px;
+		margin-top: 50px;
+		margin-bottom: auto
+	}
+	.form{
+		margin: 30px auto 0 auto;
+		width: 100%;
+	}
+	.form_button{
+		width: 100%;
+	}
+	.form_input{
+		width: 100%;
+	}
+	.btn{
+		width: 100%;
+		font-size: 25px;
+	}
+	.offer__title{
+		font-size: 37px;
+	}
+	.offer__span{
+		font-size: 67px;
+	}
+	.offer__text{
+		font-size: 23px;
+	}
+	.logo{
+		margin: auto;
+		width: 30%;
+	}
+	.wrapper-blocks{
+		font-size: 25px;
+	}
+	.img1{
+		width: 20%;
+	}
+	.footer{
+		font-size: 20px;
+	}
+	.order-form{
+		font-size: 90%;
+	}
+	.form {
+		width: 90%;
+	}
+	.form_input{
+		font-size: 20px;
+	}
+	.form_button{
+		font-size: 20px;
+	}
+	.form_input1 {
+        font-size: 16px; 
+    }
+
+    .subscription-form, .order-summary {
+        padding: 10px; 
+    }
+	#sendOrder {
+        display: block; 
+        margin-top: 10px; 
+        text-align: center; 
+		width: 100%;
+    }
+} 
+
+/*Small devices (landscape phones, 576px and up)*/ 
+@media screen and (max-width: 576px)
+{ 
+	.container, .subscription-form, .order-summary{
+		width: 90%;
+	}
+	.logo{
+		margin: auto;
+		width: 25%;
+	}
+	.offer__title{
+		font-size: 37px;
+	}
+	.offer__span{
+		font-size: 67px;
+	}
+	.offer__text{
+		font-size: 23px;
+	}
+	.btn{
+		font-size: 25px;
+	}
+	.img{
+		width: 70%;
+	}
+	.header{
+		padding-bottom: 70px;
+	}
+	.wrapper-blocks{
+		padding-bottom: 30px;
+		font-size: 24px;
+	}
+	.wrapper-form{
+		padding-top: 30px;
+	}
+	.order-form{
+		font-size: 90%;
+	}
+	.footer{
+		font-size: 20px;
+	}
+	.form{
+		width: 90%;
+	}
+	.form_button{
+		font-size: 20px;
+	}
+	.form_input{
+		font-size: 20px;
+	}
+	.img1{
+		width: 20%;
+	}
+	.subscription-form h2, .order-summary h2 {
+        font-size: 18px;
+    }
+
+    .form_input1 {
+        padding: 10px; 
+        width: 100%; 
+    }
+
+    #sendOrder {
+        display: block; 
+        margin-top: 10px; 
+        text-align: center; 
+		width: 100%;
+    }
+} 

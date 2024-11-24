@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<div>
+    <header class="header">
+        <div class="container">
+            <img class="logo" src="img/logo.png" alt="logo">
+            <div class="wrapper-inner">
+                <div class="offer">
+                    <h1 class="offer__title">С помощью нас <br>вы можете создать то, о чем</h1>
+                    <span class="offer__span">желаете!</span>
+                    <p class="offer__text">Наши возможности + опыт позволят Вам достичь <br> огромного успеха. Мы верим в вас! И знаем это на <br> все 100%. Вас не остановить!</p>
+                    <a href="#" class="btn">Узнать больше...</a>
+                </div>
+                <img class="img" id="bigimgclick" src="img/header-img.png" alt="picture">
+            </div>
+        </div>
+    </header>   
+    <div class="container">
+        <div class="wrapper-blocks">
+            <h2 class="aligning" id="txtclick0">Что Вам необходимо?</h2>
+            <div class="blocks">
+                <div class="block">
+                    <img class="img1" id="imgclick1" src="img/f3.png" alt="picture1">
+                    <h3>Первый блок</h3>
+                    <p class="aligning">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="block">
+                    <img class="img1" id="imgclick2" src="img/f4.png" alt="picture2">  
+                    <h3>Второй блок</h3>
+                    <p class="aligning">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="block">
+                    <img class="img1" id="imgclick3" src="img/f5.png" alt="picture3">
+                    <h3>Третий блок</h3>
+                    <p class="aligning">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lab8cont">
+        <div class="subscription-form">
+            <h2 class="aligning">Оформление подписки на курс</h2>
+            <form action="#">
+                <input class="form_input1" type="text" id="first-name" name="first_name" onblur="checkFirst()" placeholder="Введите ваше имя">
+                <span id="first_Check"></span>
+                <input class="form_input" type="text" id="last-name" name="last_name"  onblur="checkLast()" placeholder="Введите вашу фамилию">
+                <span id="last_Check"></span>
+                <input class="form_input" type="number" id="age" name="age" onblur="checkAge()" placeholder="Введите ваш возраст">
+                <span id="age_Check"></span>
+                <input class="form_input" type="tel" id="phone" name="phone" onblur="checkPhone()" placeholder="Введите номер телефона">
+                <span id="phone_Check"></span>
+                <input class="form_input" type="email" id="email" name="email" onblur="checkEmail()" placeholder="Введите ваш email">
+                <span id="email_Check"></span>
+                <input class="form_input" type="text" id="profession" name="profession" onblur="checkProf()" placeholder="Введите ваш род деятельности">
+                <span id="prof_Check"></span>
+                <span id="sendOrder" onclick="outputData();"><b>Подписаться</b></span>
+            </form>
+        </div>
+        <div class="order-summary">
+            <h2 class="aligning">Ваш заказ</h2>
+            <span id="summary"></span>
+        </div>
+    </div>
+    <div class="order-form">
+        <div class="container">
+            <div class="wrapper-form">
+                <h2 class="aligning">Форма заказа обратного звонка</h2>
+                <div class="form">
+                    <form action="#">
+                    <input class="form_input" placeholder="Введите свое имя" type="text" id="i1name"  pattern="^[A-Za-z]{4,15}$" title="Имя должно содержать от 4 до 15 букв английского алфавита." required/> 
+                    <input class="form_input"placeholder="Введите свой Email" type="email" id="i2email" required/> 
+                    <input class="form_input" placeholder="Телефон" type="tel" id="i3tel" pattern="^\d{3}-\d{3}-\d{4}$" title="Телефонный номер должен быть в следующем формате 123-456-7890" required/> 
+                    <input class="form_input" placeholder="Какая тема вас интересует?" type="text" id="i4theme" minlength="2" maxlength="100" required/> <br>
+                    <button  type="submit"><b>Отправить вопрос!</b></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+        <p class="footer__text" id="txtclick1">® Все на этом сайте защищено</p>
+    </div>
+    </footer>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
